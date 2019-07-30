@@ -1,0 +1,295 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* MEDIA-START */
+
+@media (max-width: 992px) {
+  /* Header */
+
+  .header-box .container {
+    max-width: 90%;
+    margin-right: 0%;
+  }
+
+  #toggle-btn {
+    display: block !important;
+  }
+
+  .num {
+    font-size: 35px !important;
+  }
+
+  .logo h2 {
+    font-size: 32px !important;
+  }
+  .media-link-box {
+    display: none;
+  }
+
+  /* footer-start */
+  footer img {
+    height: 300px;
+  }
+  .footer-heading {
+    top: 22%;
+  }
+  /* footer-end */
+}
+
+/* MEDIA-END */
+
+/* header-start */
+
+.header-box {
+  height: 14vh;
+  border-bottom: 3px solid #cecece;
+  z-index: 111;
+  background-color: white;
+}
+
+.logo {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background: orange;
+  border-radius: 50%;
+  left: 52px;
+  bottom: 41px;
+}
+
+.logo h2 {
+  height: 85%;
+  font-size: 45px;
+  line-height: 96px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  transform: skewX(-10deg);
+  text-shadow: 8px 8px 6px #c0b8a4;
+}
+
+.num {
+  color: orange;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+/* header-menu-start */
+
+#header-menu .navbar {
+  height: 93%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#header-menu .nav-item {
+  margin-left: 30px;
+  height: 43px;
+  width: 90px;
+  font-weight: 700;
+}
+
+#header-menu .nav-link {
+  padding: 0px;
+  line-height: 42px;
+  color: black;
+  opacity: 0.7;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+#header-menu .nav-link:hover {
+  opacity: 0.5;
+}
+
+.header-register {
+  background: red;
+  color: white !important;
+  border-radius: 37px;
+}
+
+/* toggle-btn-start */
+
+#toggle-btn {
+  height: 35px;
+  width: 35px;
+  box-shadow: 2px 2px 1px cadetblue;
+  margin-right: 10px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 32px;
+  display: none;
+}
+.toggle-span {
+  height: 5px;
+  margin-top: 4px;
+
+  background-color: black;
+  margin-bottom: 3px;
+  display: block;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+.top {
+  transform: rotate(45deg);
+  margin-top: 13px;
+  height: 3px;
+}
+.lower {
+  transform: rotate(-45deg);
+  height: 3px;
+  margin-top: -5px;
+}
+.hide {
+  display: none;
+}
+
+/* toggle-btn-end */
+
+/* header-menu-end */
+
+/* toggle-menu-start */
+
+.toggle-menu {
+  position: fixed;
+  z-index: 1;
+  background: cadetblue;
+  width: 300px;
+  right: -300px;
+  top: 72px;
+  height: 100%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.menu-links li {
+  border-bottom: 2px solid;
+  height: 50px;
+  margin-left: 31px;
+  text-decoration: none;
+  list-style: none;
+  line-height: 50px;
+  transition-duration: 1s;
+}
+.menu-links li:hover {
+  background-color: rgb(93, 197, 201);
+}
+
+.menu-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.media-links {
+  margin-left: 58%;
+}
+
+.media-links li {
+  list-style: none;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.media-links i {
+  color: wheat;
+}
+
+.media-links i:hover {
+  color: white;
+}
+
+.menu-show {
+  right: 0% !important;
+}
+
+/* toggle-menu-end */
+
+/* header-end */
+/* scroll-to-top-start */
+.scroll-to-top {
+  background: red;
+  height: 40px;
+  width: 35px;
+
+  opacity: 1;
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
+  z-index: 1;
+}
+
+.arrow {
+  height: 0;
+  width: 0;
+  margin: auto;
+  margin-top: 11px;
+  border: 6px solid transparent;
+  border-bottom: 6px solid white;
+}
+
+/* scroll-to-top-end */
+
+/* login-section-start */
+
+#login-container {
+  padding-top: 3%;
+  margin-top: 5%;
+  border: 6px solid #f6f6f6;
+  padding-bottom: 3%;
+}
+
+.login-box {
+  border-right: 3px solid cornflowerblue;
+}
+
+.login-heading {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+label {
+  font-size: 18px;
+}
+.register-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 6%;
+}
+
+/* login-section-end */
+
+/* footer-start */
+
+.footer-heading {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 30%;
+  text-align: center;
+}
+
+.footer-heading div {
+  color: white;
+  font-size: 32px;
+}
+
+.footer-heading p {
+  color: whitesmoke;
+  font-size: 18px;
+  margin-top: 3%;
+}
+
+/* footer-end */
